@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Morbium</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'><link rel="stylesheet" href="./loginstyle.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h2>Morbium</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<span>use your email for registration</span>
+			
+			<input type="email" placeholder="Email" id="email_fieldx" />
+			<input type="password" placeholder="Password" id="password_fieldx" />
+			<button onclick="signup()">Register</button>
+		</form>
+	</div>
+	<div id="login_div" class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" id="email_field" />
+			<input type="password" placeholder="Password" id="password_field" />
+			<a href="forgotpassword.html">Forgot your password?</a>
+			<button onclick="login()">Login to Account</button>
+		</form>
+	</div>
+	<div id="user_div" class="loggedin-div">
+   
+		<h1 id="user_para">LOADING...</h1>
+		
+	  </div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>If you are already a member login to continue.</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello</h1>
+				<p>Enter your details and create a morbium account</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script  src="./loginscript.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+		apiKey: "AIzaSyCrztheZUFM5gDUFTDWdRMxEMtvql8FaGE",
+    authDomain: "morbium-373da.firebaseapp.com",
+    databaseURL: "https://morbium-373da.firebaseio.com",
+    projectId: "morbium-373da",
+    storageBucket: "morbium-373da.appspot.com",
+    messagingSenderId: "771426120630",
+    appId: "1:771426120630:web:309fefb5d3b2fdedaf4717",
+    measurementId: "G-DQ8F1DWQ8Q"
+                        };
+                        firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
