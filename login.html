@@ -7,6 +7,23 @@
 
 </head>
 <body>
+	  <script  src="./loginscript.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+		apiKey: "AIzaSyCrztheZUFM5gDUFTDWdRMxEMtvql8FaGE",
+    authDomain: "morbium-373da.firebaseapp.com",
+    databaseURL: "https://morbium-373da.firebaseio.com",
+    projectId: "morbium-373da",
+    storageBucket: "morbium-373da.appspot.com",
+    messagingSenderId: "771426120630",
+    appId: "1:771426120630:web:309fefb5d3b2fdedaf4717",
+    measurementId: "G-DQ8F1DWQ8Q"
+                        };
+                        firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
 <!-- partial:index.partial.html -->
 <h2>Morbium</h2>
 <div class="container" id="container">
@@ -51,23 +68,7 @@
 	</div>
 </div>
 <!-- partial -->
-  <script  src="./loginscript.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-		apiKey: "AIzaSyCrztheZUFM5gDUFTDWdRMxEMtvql8FaGE",
-    authDomain: "morbium-373da.firebaseapp.com",
-    databaseURL: "https://morbium-373da.firebaseio.com",
-    projectId: "morbium-373da",
-    storageBucket: "morbium-373da.appspot.com",
-    messagingSenderId: "771426120630",
-    appId: "1:771426120630:web:309fefb5d3b2fdedaf4717",
-    measurementId: "G-DQ8F1DWQ8Q"
-                        };
-                        firebase.initializeApp(config);
-  </script>
-  <script src="index.js"></script>
+
 
 </body>
 </html>
